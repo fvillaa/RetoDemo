@@ -28,10 +28,15 @@ public class RegisterDemo implements Task {
                 Click.on(RegisterDemoPage.CHOSEN_LANGUAGE),
                 Click.on(RegisterDemoPage.CHOSEN_LANGUAGE2),
                 Click.on(RegisterDemoPage.CHOSEN_LANGUAGE3),
-                Click.on(RegisterDemoPage.INDICATE_SKILLS)
-                //SelectFromOptions.byVisibleText("Android").from(RegisterDemoPage.INDICATE_SKILLS)
-
-
+                Click.on(RegisterDemoPage.INDICATE_SKILLS),
+                Click.on(RegisterDemoPage.INDICATE_COUNTRY),
+                Click.on(RegisterDemoPage.INDICATE_SELECT_COUNTRY),
+                SelectFromOptions.byVisibleText("1982").from(RegisterDemoPage.SELECT_YEAR),
+                SelectFromOptions.byVisibleText("October").from(RegisterDemoPage.SELECT_MONTH),
+                SelectFromOptions.byVisibleText("12").from(RegisterDemoPage.SELECT_DAY),
+                Enter.theValue("Poiuytre155**").into(RegisterDemoPage.INPUT_CREATE_PASSWORD),
+                Enter.theValue("Poiuytre155**").into(RegisterDemoPage.INPUT_CONFIRM_PASSWORD),
+                Click.on(RegisterDemoPage.CLICK_BUTTON_SUBMIT)
 
         );
 

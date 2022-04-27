@@ -29,8 +29,21 @@ public class RegisterDemoPage  extends PageObject {
             located(By.xpath("//a[text()= 'Turkish']"));
     public static final Target INDICATE_SKILLS = Target.the("indicate skills").
             located(By.xpath("//option[text()= 'Android']"));
-
-
-
+    public static final Target INDICATE_COUNTRY = Target.the("indicate COUNTRY").
+            located(By.id("countries"));
+    public static final Target INDICATE_SELECT_COUNTRY = Target.the("indicate SELECT COUNTRY").
+            located(By.xpath("//option[text()= 'United States of America']"));
+    public static final Target SELECT_YEAR = Target.the("select year").
+            located(By.id("yearbox"));
+    public static final Target SELECT_MONTH = Target.the("select the month").
+            located(By.xpath("//select[@placeholder= 'Month']"));
+    public static final Target SELECT_DAY = Target.the("select day").
+            located(By.id("daybox"));
+    public static final Target INPUT_CREATE_PASSWORD = Target.the("write password to create")
+            .located(By.id("firstpassword"));
+    public static final Target INPUT_CONFIRM_PASSWORD = Target.the("write password to confirm")
+            .located(By.id("secondpassword"));
+    public static final Target CLICK_BUTTON_SUBMIT = Target.the("click button submit")
+            .located(By.id("submitbtn"));
 
 }
