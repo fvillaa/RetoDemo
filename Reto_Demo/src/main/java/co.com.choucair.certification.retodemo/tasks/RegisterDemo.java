@@ -2,18 +2,22 @@ package co.com.choucair.certification.retodemo.tasks;
 
 import co.com.choucair.certification.retodemo.userinterface.RegisterDemoPage;
 import net.serenitybdd.screenplay.Actor;
-import net.serenitybdd.screenplay.Performable;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.Tasks;
 import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Enter;
 import net.serenitybdd.screenplay.actions.SelectFromOptions;
-import org.junit.rules.Timeout;
+
 
 public class RegisterDemo implements Task {
     public static RegisterDemo onThePage() {
         return Tasks.instrumented(RegisterDemo.class);
     }
+
+    public static RegisterDemo the(String user) {
+        return Tasks.instrumented(RegisterDemo.class,user);
+    }
+
     @Override
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(Click.on(RegisterDemoPage.INPUT_FIRSTNAME),
@@ -36,7 +40,8 @@ public class RegisterDemo implements Task {
                 SelectFromOptions.byVisibleText("12").from(RegisterDemoPage.SELECT_DAY),
                 Enter.theValue("Poiuytre155**").into(RegisterDemoPage.INPUT_CREATE_PASSWORD),
                 Enter.theValue("Poiuytre155**").into(RegisterDemoPage.INPUT_CONFIRM_PASSWORD),
-                Click.on(RegisterDemoPage.CLICK_BUTTON_SUBMIT)
+                Click.on(RegisterDemoPage.CLICK_BUTTON_SUBMIT),
+                Click.on(RegisterDemoPage.REGISTER_DATA)
 
         );
 

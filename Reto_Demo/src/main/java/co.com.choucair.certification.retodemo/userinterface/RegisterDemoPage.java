@@ -45,5 +45,7 @@ public class RegisterDemoPage  extends PageObject {
             .located(By.id("secondpassword"));
     public static final Target CLICK_BUTTON_SUBMIT = Target.the("click button submit")
             .located(By.id("submitbtn"));
+    public static final Target REGISTER_DATA = Target.the("Register data user").
+            located(By.xpath("//h2[text()= 'Register']"));
 
 }

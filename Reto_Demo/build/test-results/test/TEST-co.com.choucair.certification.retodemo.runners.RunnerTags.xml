@@ -1,11 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuite name="co.com.choucair.certification.retodemo.runners.RunnerTags" tests="0" skipped="0" failures="0" errors="0" timestamp="1970-01-01T00:00:00" hostname="DESKTOP-1EP5HQ0" time="0.0">
   <properties/>
-  <system-out><![CDATA[REGISTER BASE STEP LISTENER net.thucydides.core.steps.BaseStepListener@3f8613b6
+  <system-out><![CDATA[REGISTER BASE STEP LISTENER net.thucydides.core.steps.BaseStepListener@4dce24a5
 
-1 Scenarios (?[32m1 passed?[0m)
-3 Steps (?[32m3 passed?[0m)
-0m26,943s
+?[31mFailed scenarios:?[0m
+?[31msrc/test/resources/features/demo.feature:7 ?[0m# perform user registration by entering the following
+
+1 Scenarios (?[31m1 failed?[0m)
+3 Steps (?[31m1 failed?[0m, ?[32m2 passed?[0m)
+0m24,925s
+
+java.lang.AssertionError: Expected answer
+Expected: is <true>
+     but: was <false>
+	at net.serenitybdd.screenplay.ErrorTally.throwSummaryExceptionFrom(ErrorTally.java:36)
+	at net.serenitybdd.screenplay.ErrorTally.reportAnyErrors(ErrorTally.java:30)
+	at net.serenitybdd.screenplay.Actor.should(Actor.java:301)
+	at co.com.choucair.certification.retodemo.stepdefinitions.demoStepdefinitions.correctlyRegisterYourData(demoStepdefinitions.java:35)
+	at ?.correctly register your data(src/test/resources/features/demo.feature:11)
 
 ]]></system-out>
   <system-err><![CDATA[[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - 

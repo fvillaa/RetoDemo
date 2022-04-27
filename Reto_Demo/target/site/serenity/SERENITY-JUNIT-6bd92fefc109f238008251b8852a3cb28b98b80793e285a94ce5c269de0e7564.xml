@@ -1,1 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="retoDemo" skipped="0" tests="1" time="25.58" timestamp="2022-04-26 11:26:04"><testcase name="perform user registration by entering the following"/></testsuite>
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="retoDemo" skipped="0" tests="1" time="23.83" timestamp="2022-04-27 04:33:04"><testcase name="perform user registration by entering the following"><failure message="Expected answer&#10;Expected: is &lt;true&gt;&#10;     but: was &lt;false&gt;" type="java.lang.AssertionError">Expected answer
+Expected: is &lt;true&gt;
+     but: was &lt;false&gt;</failure><system-err>Expected answer
+Expected: is &lt;true&gt;
+     but: was &lt;false&gt;&#13;
+co.com.choucair.certification.retodemo.stepdefinitions.demoStepdefinitions.correctlyRegisterYourData(demoStepdefinitions.java:35)&#13;
+✽.correctly register your data(src/test/resources/features/demo.feature:11)&#13;
+</system-err></testcase></testsuite>
