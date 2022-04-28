@@ -1,5 +1,6 @@
 package co.com.choucair.certification.retodemo.stepdefinitions;
 
+import co.com.choucair.certification.retodemo.model.DemoDataRegister;
 import co.com.choucair.certification.retodemo.questions.Answer;
 import co.com.choucair.certification.retodemo.tasks.OpenUp;
 import co.com.choucair.certification.retodemo.tasks.RegisterDemo;
@@ -10,6 +11,8 @@ import cucumber.api.java.en.When;
 import net.serenitybdd.screenplay.GivenWhenThen;
 import net.serenitybdd.screenplay.actors.OnStage;
 import net.serenitybdd.screenplay.actors.OnlineCast;
+
+import java.util.List;
 
 public class demoStepdefinitions {
     @Before
@@ -24,9 +27,9 @@ public class demoStepdefinitions {
     }
 
 
-    @When("^Entering the registration (.*)$")
-    public void enteringTheRegistrationTabOfTheAutomationDemoSite(String user) {
-        OnStage.theActorInTheSpotlight().attemptsTo(RegisterDemo.the(user));
+    @When("^Entering the register tab of the automation demo site$")
+    public void enteringTheRegisterTabOfTheAutomationDemoSite(List<DemoDataRegister>demoDataRegister) {
+        OnStage.theActorInTheSpotlight().attemptsTo(RegisterDemo.the(demoDataRegister.get(0)));
 
     }
 

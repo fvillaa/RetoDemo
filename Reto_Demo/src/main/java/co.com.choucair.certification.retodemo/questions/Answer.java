@@ -22,7 +22,7 @@ public class Answer implements Question<Boolean> {
     public Boolean answeredBy(Actor actor) {
         boolean result;
         String registerData= Text.of(RegisterDemoPage.REGISTER_DATA).viewedBy(actor).asString();
-        if (registerData.contains(question)) {
+        if (registerData.equals(question)) {
             result = true;
         }else {
             result = false;
