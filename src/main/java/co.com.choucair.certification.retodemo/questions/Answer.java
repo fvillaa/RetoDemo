@@ -1,6 +1,5 @@
 package co.com.choucair.certification.retodemo.questions;
 
-import co.com.choucair.certification.retodemo.tasks.RegisterDemo;
 import co.com.choucair.certification.retodemo.userinterface.RegisterDemoPage;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Question;

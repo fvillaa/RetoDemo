@@ -2,8 +2,8 @@ package co.com.choucair.certification.retodemo.stepdefinitions;
 
 import co.com.choucair.certification.retodemo.model.DemoDataRegister;
 import co.com.choucair.certification.retodemo.questions.Answer;
-import co.com.choucair.certification.retodemo.tasks.OpenUp;
-import co.com.choucair.certification.retodemo.tasks.RegisterDemo;
+import co.com.choucair.certification.retodemo.taks.OpenUp;
+import co.com.choucair.certification.retodemo.taks.RegisterDemo;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -11,7 +11,6 @@ import cucumber.api.java.en.When;
 import net.serenitybdd.screenplay.GivenWhenThen;
 import net.serenitybdd.screenplay.actors.OnStage;
 import net.serenitybdd.screenplay.actors.OnlineCast;
-import org.mockito.stubbing.Answer;
 
 import java.util.List;
 

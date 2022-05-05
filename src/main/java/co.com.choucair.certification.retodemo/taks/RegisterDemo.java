@@ -1,7 +1,8 @@
-package co.com.choucair.certification.retodemo.tasks;
+package co.com.choucair.certification.retodemo.taks;
 
 import co.com.choucair.certification.retodemo.model.DemoDataRegister;
 
+import co.com.choucair.certification.retodemo.userinterface.RegisterDemoPage;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.Tasks;
@@ -21,7 +22,7 @@ public class RegisterDemo implements Task {
 
     @Override
     public <T extends Actor> void performAs(T actor) {
-        actor.attemptsTo(Click.on(RegisterDemoPage.INPUT_FIRSTNAME);
+        actor.attemptsTo(Click.on(RegisterDemoPage.INPUT_FIRSTNAME));
         actor.attemptsTo(Enter.theValue(demoDataRegister.getFirstname()).into(RegisterDemoPage.INPUT_FIRSTNAME));
         actor.attemptsTo(Enter.theValue(demoDataRegister.getLastname()).into(RegisterDemoPage.INPUT_LASTNAME));
         actor.attemptsTo(Enter.theValue(demoDataRegister.getAddress()).into(RegisterDemoPage.INPUT_ADDRESS));

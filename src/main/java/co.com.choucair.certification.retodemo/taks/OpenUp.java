@@ -1,8 +1,7 @@
-package co.com.choucair.certification.retodemo.tasks;
+package co.com.choucair.certification.retodemo.taks;
 
 import co.com.choucair.certification.retodemo.userinterface.OpenDemoPage;
 import net.serenitybdd.screenplay.Actor;
-import net.serenitybdd.screenplay.Performable;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.Tasks;
 import net.serenitybdd.screenplay.actions.Open;
